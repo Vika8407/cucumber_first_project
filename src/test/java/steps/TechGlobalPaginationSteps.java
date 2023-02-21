@@ -53,6 +53,8 @@ public class TechGlobalPaginationSteps {
         techGlobalFrontendHomePage.clickOnCard(cardName);
     }
 
+
+
     @And("user should see {string} heading")
     public void user_should_see_heading(String heading) {
         switch (heading){
@@ -111,41 +113,17 @@ public class TechGlobalPaginationSteps {
         }
     }
 
-   /* @And("user should see city with info below and an image")
+    /*@And("user should see city with info below and an image")
     public void userShouldSeeCityWithInfoBelowAndAnImage(DataTable info) {
         Assert.assertTrue(techGlobalPaginationPage.image.isDisplayed());
         for (int i = 0; i < info.asList.size(); i++){
             Assert.assertEquals(techGlobalPaginationPage.text.get(i).getText(), info.asList().get(i));
         }
         techGlobalPaginationPage.nextButton.click();
-    }
 
-    */
-
-
-
-    @When("user clicks on {string} header dropdown option")
-    public void user_clicks_on_header_dropdown_option(String string) {
-
-    }
-
-
-    @When("user clicks on {string} button")
-    public void user_clicks_on_button(String string) {
-
+     */
     }
 
 
 
-    @Then("user should see {string} city with info below and an image")
-    public void user_should_see_city_with_info_below_and_an_image(String string, io.cucumber.datatable.DataTable dataTable) {
 
-    }
-
-    @Then("user should see {string} city with info below and an image")
-    public void user_should_see_city_with_info_below_and_an_image(String string) {
-
-    }
-
-
-}
